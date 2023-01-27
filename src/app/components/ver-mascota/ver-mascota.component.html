@@ -1,0 +1,22 @@
+<div class="ver-mascota-cmp">
+    <div class="ver-mascota-cmp__title title">
+        <h1>Ver Mascota</h1>
+    </div>
+    <!-- <div class="ver-mascota-cmp__container container" *ngIf="mascota$ | async as mascota">  PIPE ASYNC -->
+    <div class="ver-mascota-cmp__container container" *ngIf="mascota !== undefined || null">
+        <mat-card class="ver-mascota-cmp__card">
+            <mat-card-title class="ver-mascota-cmp__card-title">
+                {{mascota.nombre}}
+            </mat-card-title>
+            <mat-card-content class="ver-mascota-cmp__card-content">
+                <p><strong>Raza:</strong> {{mascota.raza}}</p>
+                <p><strong>Color:</strong> {{mascota.color}}</p>
+                <p><strong>Peso:</strong> {{mascota.peso}} Kilos</p>
+                <p><strong>Edad:</strong> {{mascota.edad}} Años</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button routerLink="/lista-mascotas" mat-raised-button>Volver</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

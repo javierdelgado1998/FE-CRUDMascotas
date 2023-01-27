@@ -1,0 +1,35 @@
+.listado-mascota-cmp {
+  width: 100%;
+  
+  &__table {
+    table {
+      width: 100%;
+
+      td,
+      th {
+        width: 15%;
+      }
+
+      .delete,
+      .edit,
+      .search {
+        cursor: pointer;
+      }
+      .delete {
+        color: #e15639;
+      }
+      .edit {
+        color: #187880;
+      }
+      .add {
+        font-size: 10px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+}

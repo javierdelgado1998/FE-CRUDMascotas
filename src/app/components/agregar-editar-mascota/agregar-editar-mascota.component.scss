@@ -1,0 +1,16 @@
+.agregar-editar-mascota-cmp {
+  &__card {
+    &__form {
+      .mat-form-field {
+        width: 100%;
+        margin: 5px;
+      }
+
+      &__button {
+        &--primary {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
